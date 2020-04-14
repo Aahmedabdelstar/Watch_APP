@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /// test second commit
+
         tvSplash = findViewById(R.id.tvSplash);
         tvSubSplash = findViewById(R.id.tvSubSplash);
         btnGet = findViewById(R.id.btnGet);
