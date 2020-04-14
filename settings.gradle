@@ -1,0 +1,2 @@
+rootProject.name='Witch_app'
+include ':app'

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".StopWatchAct">
+
+    <ImageView
+        android:id="@+id/ivSplesh"
+        android:layout_width="276dp"
+        android:layout_height="247dp"
+        android:src="@drawable/bgcircle"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO">
+
+    </ImageView>
+    <ImageView
+        android:id="@+id/icon_cher"
+        android:layout_width="358dp"
+        android:layout_height="357dp"
+        android:src="@drawable/icanchor"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <Chronometer
+        android:id="@+id/timeHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/icon_cher"
+        android:layout_marginTop="48dp"
+        android:textSize="62sp"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="288dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:background="@drawable/bgbtngreen"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/btnStop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeHere" />
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="288dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Stop "
+        android:textAllCaps="false"
+        android:background="@drawable/bgbtnred"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGet" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
